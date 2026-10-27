@@ -4,84 +4,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TradeMax | Trading, Crypto, Business & AI</title>
+<title>TRADEMAX | Gold Live</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#08090d;color:#fff;font-family:Arial,sans-serif}
-header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #c99a35}
-.logo{font-size:26px;font-weight:bold;letter-spacing:2px;color:#f4bd50}
-nav a{color:white;text-decoration:none;margin:0 8px}
-.hero{padding:100px 7%;min-height:450px;background:linear-gradient(90deg,#08090d,#111827);text-align:left}
-h1{font-size:clamp(40px,7vw,70px);margin:15px 0;color:#f4bd50}
-.hero p{max-width:600px;color:#ccc;line-height:1.8}
-.btn{display:inline-block;background:#f4bd50;color:#111;padding:13px 22px;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:15px}
-section{padding:55px 7%}
-h2{color:#f4bd50}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{padding:25px;background:#151720;border:1px solid #705a2b;border-radius:12px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#08090d;color:white;font-family:Arial,sans-serif}
+header{padding:18px 5%;background:#111;border-bottom:1px solid #d6aa45}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:25px;font-weight:bold;color:#f4bd50;letter-spacing:2px}
+nav a{color:white;text-decoration:none;margin:0 7px}
+.hero{padding:40px 5%;background:linear-gradient(135deg,#171717,#08090d)}
+h1{font-size:clamp(36px,7vw,65px)}
+.gold{color:#f4bd50}
+p{color:#c5c5cc;line-height:1.7}
+.btn{display:inline-block;padding:13px 20px;background:#f4bd50;color:#111;text-decoration:none;font-weight:bold;border-radius:5px;margin-top:10px}
+.banner{width:100%;height:auto;display:block;margin-top:25px;border:1px solid #705a2b;border-radius:10px}
+section{padding:35px 5%}
+.chart{height:520px;width:100%;border:1px solid #705a2b;border-radius:10px;overflow:hidden;background:#131722}
+.tradingview-widget-container,.tradingview-widget-container__widget{height:100%;width:100%}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:#151720;border:1px solid #705a2b;padding:20px;border-radius:10px}
 .card h3{color:#f4bd50}
-.card p{color:#ccc;line-height:1.7}
-.banner{width:100%;max-height:380px;object-fit:cover;border-radius:12px;margin-top:25px}
-footer{text-align:center;padding:30px;color:#aaa;border-top:1px solid #705a2b}
+footer{padding:25px 5%;border-top:1px solid #705a2b}
+@media(max-width:600px){.chart{height:450px}}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">↗ TRADEMAX</div>
 <nav>
+<div class="logo">TRADEMAX</div>
+<div>
+<a href="#gold">Gold Live</a>
 <a href="#markets">Markets</a>
-<a href="#crypto">Crypto</a>
-<a href="#business">Business</a>
-<a href="#ai">AI</a>
+<a href="#about">About</a>
+</div>
 </nav>
 </header>
 
 <main>
 <div class="hero">
-<p>LEARN • ANALYZE • GROW</p>
-<h1>Trade Smarter.<br>Think Bigger.</h1>
-<p>Trading, cryptocurrency, business and artificial intelligence — explore ideas and insights to help you make informed decisions.</p>
-<a class="btn" href="#markets">Explore TradeMax</a>
-<img class="banner" src="trademax-banner.png" alt="TradeMax gold trading banner">
+<p class="gold">LEARN • ANALYZE • GROW</p>
+<h1>Trade Smarter.<br><span class="gold">Think Bigger.</span></h1>
+<p>International Gold, trading education, markets and technology.</p>
+<a class="btn" href="#gold">VIEW GOLD LIVE ↓</a>
+<img class="banner" src="trademax-banner.png" alt="TradeMax Banner">
 </div>
+
+<section id="gold">
+<p class="gold">INTERNATIONAL GOLD MARKET</p>
+<h2>Gold <span class="gold">XAU/USD</span> Live Chart</h2>
+<p>Live gold chart with candlesticks and selectable timeframes.</p>
+<div class="chart">
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+{
+  "autosize": true,
+  "symbol": "OANDA:XAUUSD",
+  "interval": "15",
+  "timezone": "Asia/Kolkata",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "allow_symbol_change": true,
+  "calendar": false,
+  "support_host": "https://www.tradingview.com"
+}
+</script>
+</div>
+</div>
+<p style="font-size:12px">Chart by TradingView. Market data availability and delays depend on the provider. Not financial advice.</p>
+<a class="btn" href="https://www.tradingview.com/" target="_blank" rel="noopener">OPEN TRADINGVIEW ↗</a>
+</section>
 
 <section id="markets">
-<h2>Stock Market</h2>
-<div class="grid">
-<div class="card"><h3>Trading Education</h3><p>Learn chart patterns, support and resistance, and market basics.</p></div>
-<div class="card"><h3>Risk Management</h3><p>Understand position sizing, stop-losses and disciplined trading.</p></div>
+<h2>Markets & Insights</h2>
+<div class="cards">
+<div class="card"><h3>Gold Trading</h3><p>Gold price action, trends and support and resistance.</p></div>
+<div class="card"><h3>Crypto</h3><p>Learn about Bitcoin and digital assets.</p></div>
+<div class="card"><h3>Business & AI</h3><p>Explore business ideas and AI technology.</p></div>
 </div>
 </section>
 
-<section id="crypto">
-<h2>Crypto</h2>
-<div class="grid">
-<div class="card"><h3>Bitcoin & Blockchain</h3><p>Explore cryptocurrency concepts and blockchain technology.</p></div>
-<div class="card"><h3>Crypto Insights</h3><p>Research digital assets and verify news before making decisions.</p></div>
+<section id="about">
+<div class="card">
+<h2>About <span class="gold">TradeMax</span></h2>
+<p>Market information and trading education in one place. Always research carefully and manage risk.</p>
 </div>
-</section>
-
-<section id="business">
-<h2>Business</h2>
-<div class="grid">
-<div class="card"><h3>Business Trends</h3><p>Explore companies, startups, finance and economic developments.</p></div>
-<div class="card"><h3>Entrepreneurship</h3><p>Discover ideas for building skills and understanding business.</p></div>
-</div>
-</section>
-
-<section id="ai">
-<h2>AI & Technology</h2>
-<div class="grid">
-<div class="card"><h3>AI Tools</h3><p>Discover useful artificial intelligence tools and applications.</p></div>
-<div class="card"><h3>Tech Updates</h3><p>Learn about emerging technologies and digital innovation.</p></div>
-</div>
-<p style="color:#aaa">Note: This starter website does not automatically fetch live news yet.</p>
 </section>
 </main>
 
 <footer>
-<p>© 2026 TradeMax. All rights reserved.</p>
-<p>Educational content only. Not financial or investment advice.</p>
+<div class="logo">TRADEMAX</div>
+<p style="font-size:12px">© 2026 TradeMax. Market data provided by third-party services.</p>
 </footer>
 </body>
 </html>
