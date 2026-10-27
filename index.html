@@ -66,6 +66,93 @@ footer{padding:25px 5%;border-top:1px solid #705a2b}
 </nav>
 </header>
 
+<section class="cinematic-hero">
+  <div class="hero-content">
+    <p class="hero-tag">MARKETS • STRATEGY • TECHNOLOGY</p>
+
+    <h1>Trade Smarter.<br>
+      <span>Think Bigger.</span>
+    </h1>
+
+    <p class="hero-description">
+      Explore Gold, Forex, Crypto and Global Markets
+      with TradeMax. Make informed decisions through
+      research, market insights and disciplined strategy.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#gold" class="hero-btn">Explore Gold</a>
+      <a href="#markets" class="hero-btn secondary">Explore Markets</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.cinematic-hero {
+  padding: 65px 6%;
+  margin: 20px auto;
+  border: 1px solid #705a2b;
+  border-radius: 18px;
+  background: radial-gradient(
+    circle at top right,
+    #17304a 0%, #111722 42%, #08090d 100%
+  );
+  animation: heroEnter 1s ease-out;
+}
+
+.hero-tag {
+  color: #f4bd50;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.cinematic-hero h1 {
+  font-size: clamp(38px, 7vw, 68px);
+  line-height: 1.1;
+  margin: 20px 0;
+  color: white;
+}
+
+.cinematic-hero h1 span {
+  color: #f4bd50;
+  text-shadow: 0 0 18px #f4bd5055;
+}
+
+.hero-description {
+  max-width: 600px;
+  color: #c5c5cc;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 7px;
+  background: #f4bd50;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-btn.secondary {
+  background: transparent;
+  border: 1px solid #f4bd50;
+  color: #f4bd50;
+}
+
+@keyframes heroEnter {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
 <main>
 <div class="hero">
 <p class="gold">LEARN • ANALYZE • GROW</p>
