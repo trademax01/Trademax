@@ -52,6 +52,79 @@ section{padding:35px 5%}
 .card h3{color:#f4bd50}
 footer{padding:25px 5%;border-top:1px solid #705a2b}
 @media(max-width:600px){.chart{height:450px}}
+
+.gold-analysis {
+  margin: 30px auto;
+  padding: 24px 16px;
+  background: linear-gradient(145deg, #111722, #08090d);
+  border: 1px solid #705a2b;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.analysis-label {
+  color: #f4bd50;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.analysis-header h2 {
+  color: #f4bd50;
+  font-size: clamp(25px, 5vw, 36px);
+  margin: 12px 0;
+}
+
+.analysis-header p,
+.analysis-card p {
+  color: #c5c5cc;
+  line-height: 1.6;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.analysis-card {
+  padding: 16px;
+  background: #151b26;
+  border: 1px solid #303746;
+  border-radius: 12px;
+  min-width: 0;
+}
+
+.analysis-card span {
+  color: #f4bd50;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.analysis-card h3 {
+  font-size: 17px;
+  margin: 12px 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.analysis-card p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.analysis-disclaimer {
+  margin-top: 18px;
+  color: #aeb5c2;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -173,6 +246,48 @@ footer{padding:25px 5%;border-top:1px solid #705a2b}
   src="https://www.financecalendar.com/wp-json/fc/v1/widget"
   async>
 </script>
+
+<section id="gold-analysis" class="gold-analysis">
+  <div class="analysis-header">
+    <span class="analysis-label">TRADEMAX • MARKET INSIGHTS</span>
+    <h2>Daily Gold Analysis</h2>
+    <p>
+      Technical levels, breakout zones and market scenarios
+      for Gold traders.
+    </p>
+  </div>
+
+  <div class="analysis-grid">
+    <div class="analysis-card">
+      <span>MARKET BIAS</span>
+      <h3>Update Daily</h3>
+      <p>Bullish / Bearish / Neutral</p>
+    </div>
+
+    <div class="analysis-card">
+      <span>SUPPORT ZONE</span>
+      <h3>To Be Updated</h3>
+      <p>Key downside levels</p>
+    </div>
+
+    <div class="analysis-card">
+      <span>RESISTANCE ZONE</span>
+      <h3>To Be Updated</h3>
+      <p>Key upside levels</p>
+    </div>
+
+    <div class="analysis-card">
+      <span>TRADE SETUP</span>
+      <h3>Breakout & Retest</h3>
+      <p>Wait for confirmation; avoid forced entries.</p>
+    </div>
+  </div>
+
+  <p class="analysis-disclaimer">
+    Educational market analysis only. Trading involves risk.
+    These levels are placeholders, not live trading signals.
+  </p>
+</section>
 
 <main>
 <div class="hero">
